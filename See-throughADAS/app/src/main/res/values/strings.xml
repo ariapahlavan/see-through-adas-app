@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">See-through ADAS</string>
+    <string name="title_activity_video">videoActivity</string>
+</resources>

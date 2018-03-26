@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="team6.see_throughadas.videoActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="561dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="276dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:onClick="videoplay"
+        android:text="Play" />
+
+</LinearLayout>

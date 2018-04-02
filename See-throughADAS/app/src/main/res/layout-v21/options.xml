@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team6.see_throughadas.Options">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="724dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="693dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/select_annotation_view_uncheck_all_for_original_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="1147dp"
+        android:layout_marginStart="45dp"
+        android:text="@string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/annotated"
+        android:layout_width="256dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@android:color/black"
+        android:checked="false"
+        android:text="@string/annotated_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/stitched"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="1083dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="28dp"
+        android:buttonTint="@android:color/background_dark"
+        android:text="@string/stitched_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/annotated" />
+
+</android.support.constraint.ConstraintLayout>

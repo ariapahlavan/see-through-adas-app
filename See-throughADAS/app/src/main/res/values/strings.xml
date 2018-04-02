@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">See-through ADAS</string>
     <string name="title_activity_video">videoActivity</string>
+    <string name="select_annotation_view">Select annotation view:</string>
+    <string name="traffic_light">Traffic Light</string>
+    <string name="cars">Cars</string>
+    <string name="pedestrians">Pedestrians</string>
+    <string name="ok">OK</string>
+    <string name="options">Options</string>
+    <string name="annotations">Annotations</string>
+    <string name="stitched_video">Stitched Video</string>
+    <string name="original_video">Original Video</string>
+    <string name="annotated_video">Annotated Video</string>
+    <string name="select_annotation_view_uncheck_all_for_original_view">Select annotation view: (uncheck all for original view)</string>
 </resources>

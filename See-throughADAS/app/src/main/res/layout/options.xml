@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team6.see_throughadas.Options">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="724dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="693dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/select_annotation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/pedestrians"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="1124dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@android:color/black"
+        android:checked="true"
+        android:text="@string/pedestrians"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/cars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="1173dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="36dp"
+        android:buttonTint="@android:color/black"
+        android:checked="true"
+        android:text="@string/cars"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/trafficlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pedestrians" />
+
+    <CheckBox
+        android:id="@+id/trafficlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="424dp"
+        android:layout_marginEnd="1122dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="42dp"
+        android:buttonTint="@android:color/background_dark"
+        android:checked="true"
+        android:text="@string/traffic_light"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cars" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="1147dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="323dp"
+        android:text="@string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trafficlight" />
+
+    <CheckBox
+        android:id="@+id/annotations"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="247dp"
+        android:layout_marginEnd="1110dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="29dp"
+        android:buttonTint="@android:color/black"
+        android:checked="true"
+        android:text="@string/annotations"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trafficlight"
+        app:layout_constraintVertical_bias="1.0" tools:targetApi="lollipop"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,29 +1,23 @@
 package team6.see_throughadas;
 
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.MediaController;
 import android.widget.VideoView;
-
-import java.io.Externalizable;
-import java.io.File;
 
 public class videoActivity extends AppCompatActivity {
     VideoView videov;
     MediaController mediacont;
     String uri;
+
+    static int prevPosition = 0;
+    static int duration = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +42,8 @@ public class videoActivity extends AppCompatActivity {
                 break;
         }
 
+
+
         videov.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
@@ -58,6 +54,10 @@ public class videoActivity extends AppCompatActivity {
 
         mediacont.setAnchorView(videov);
         videov.setMediaController(mediacont);
+
+
+        int prevPausedAt = prevPosition * duration/100;
+        videov.seekTo(prevPausedAt);
 
         videov.start();
     }
@@ -74,8 +74,11 @@ public class videoActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         if (item.getItemId() == R.id.options) {
+            videov.pause();
+            duration = videov.getDuration();
+            prevPosition = videov.getCurrentPosition() * 100 / duration;
+
             Intent intent = new Intent(this, Options.class);
             this.startActivity(intent);
             return true;

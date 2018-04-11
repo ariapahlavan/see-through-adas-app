@@ -8,11 +8,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 
 public class Options extends AppCompatActivity {
-
     public static int videoOption = 3;
     CheckBox annotated;
     CheckBox stitched;
-  //  CheckBox original;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +18,8 @@ public class Options extends AppCompatActivity {
         setContentView(R.layout.options);
 
 
-        stitched = (CheckBox) findViewById(R.id.stitched);
-  //      original = (CheckBox) findViewById(R.id.original);
-        annotated = (CheckBox) findViewById(R.id.annotated);
+        stitched = findViewById(R.id.stitched);
+        annotated = findViewById(R.id.annotated);
         Button button = findViewById(R.id.button);
 
 
